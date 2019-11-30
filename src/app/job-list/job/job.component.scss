@@ -1,0 +1,13 @@
+.job-container {
+  background-color: rgb(209, 209, 209);
+  height: 100%;
+  .job-details{
+    padding: 15px;
+    .date_location {
+      padding-top: 10px;
+    }
+    h2 {
+      margin: 0;
+    }
+  }
+}

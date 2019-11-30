@@ -1,0 +1,40 @@
+label {
+  display: inline-block;
+  margin-bottom: 10px;
+  
+}
+
+.form-control {
+  display: block;
+  width: 400px;
+  height: 28px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid rgb(207, 207, 207);
+}
+
+.btn {
+  padding: 10px;
+  background-color: rgb(58, 120, 255);
+  border-radius: 3px;
+  border: 1px solid transparent;
+  color: white;
+  cursor: pointer;
+  width: 1fr;
+}
+
+.search-form {
+  margin: auto;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.radius-dropdown {
+  width: 1fr;
+}
+

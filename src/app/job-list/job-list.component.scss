@@ -1,0 +1,6 @@
+.job-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 140px;
+  grid-row-gap: 10px;
+}

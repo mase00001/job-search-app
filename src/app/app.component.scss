@@ -1,0 +1,19 @@
+.jooble-logo {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 20px;
+  left: 30px;
+}
+
+.heading {
+  position: absolute;
+  width: 100%;
+  top: 40px;
+  display: flex;
+  h1 {
+    font-family: Roboto;
+    margin: auto;
+    color: #404040;
+  }
+}

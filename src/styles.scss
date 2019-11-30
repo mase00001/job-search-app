@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(https://fonts.googleapis.com/css?family=Roboto:700&display=swap);
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.container {
+  display: flex;
+  width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+
+}
+
+body {
+  background-image: linear-gradient(to right, #DBEBF9, #7360F2);
+  margin: 0;
+}

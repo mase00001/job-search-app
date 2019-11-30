@@ -1,0 +1,38 @@
+<div class="container">
+  <form 
+    (ngSubmit)="onSubmit(f)" 
+    #f="ngForm"
+    class="search-form">
+    <div class="row">
+      <input 
+        class="form-control" 
+        placeholder="Keywords"
+        type="text"
+        name="jobSearch"
+        ngModel
+        required>
+      <input 
+        class="form-control" 
+        placeholder="location"
+        type="text"
+        name="location"
+        ngModel
+        required>
+      <div class="row">
+        <select
+          class="radius-dropdown" 
+          name="radius" 
+          id="" 
+          ngModel
+          >
+          <option 
+            id="radius-text" value="" selected disabled hidden>Radius (km)</option>
+          <option 
+          *ngFor='let radius of radiusRange'
+          value="{{ radius }}">{{ radius }}</option>        
+        </select>
+      <button class="btn" type="submit">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
