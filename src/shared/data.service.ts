@@ -8,11 +8,7 @@ import { JobSearch } from 'src/app/job-search/job-search.model';
 @Injectable({providedIn: 'root'})
 export class DataService {
   constructor(private http: HttpClient, private jobService: JobService) {}
-  
-  languageFilter() {
-
-  }
-  
+    
   fetchJobList(jobSearch: JobSearch) {
     const httpOptions = {
       headers: new HttpHeaders({
@@ -30,7 +26,6 @@ export class DataService {
           this.jobService.setJobTotal(jobs['totalCount']);
         }),
         map(jobs => {
-          console.log(jobs);
           return jobs['jobs']
           .filter(job => {
             const testCase = /\been\b|\bhet\b|\bvoor\b|\ben\b/;
@@ -41,7 +36,7 @@ export class DataService {
           })
         }),
         tap(jobs => {
-          this.jobService.setJobs(jobs);
+          this.jobService.setJobs(jobs, jobSearch);
         })
       )
       .subscribe(jobs => {

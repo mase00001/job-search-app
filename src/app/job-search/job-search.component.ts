@@ -19,8 +19,8 @@ export class JobSearchComponent implements OnInit {
   }
 
   onSubmit(form: NgForm) {
-    const jobSearch = new JobSearch(form.value.jobSearch, form.value.location, form.value.radius, 2)
-    this.dataService.fetchJobList(jobSearch)
-    this.router.navigate(['/job-list'])
+    const jobSearch = new JobSearch(form.value.jobSearch, form.value.location, form.value.radius, 2);
+    this.dataService.fetchJobList(jobSearch);
+    this.router.navigate(['/job-list']);
   }
 }

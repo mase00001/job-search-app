@@ -1,11 +1,13 @@
-<a routerLink='/'>Back to search</a>
-<div class="job-list">
-  <app-job
-  *ngFor="let job of jobs"
-  [job]="job"></app-job>
+<div class='job-list-wrapper'>
+    <a routerLink='/'>Back to search</a>
+  <div class="job-list">
+    <app-job
+    *ngFor="let job of jobs"
+    [job]="job"></app-job>
+  </div>
 </div>
-<!-- <div class="pagination-group">
+<div class="pagination-group" *ngIf="jobCount > 0;">
   <ul>
-    <li></li>
+    <li *ngFor="let i of numberOfPages(jobCount); let in = index;">{{ in+1 }}</li>
   </ul>
-</div> -->
+</div>
